@@ -39,7 +39,6 @@ export default class Main extends Component {
       </View>
     );
   }
-
 }
 
 const styles = StyleSheet.create({
