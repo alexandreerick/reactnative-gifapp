@@ -45,9 +45,9 @@ const styles = StyleSheet.create({
   stretch: {
     width: 300,
     height: 300,
+    marginBottom: 30,
   },
   display: {
-    flexDirection: 'column',
     paddingLeft: 90,
     paddingTop: 30,
   },
