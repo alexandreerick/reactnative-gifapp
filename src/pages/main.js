@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import api from '../services/api'
 
+// Imports
 import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity } from "react-native";
 
 export default class Main extends Component {
@@ -45,6 +46,7 @@ export default class Main extends Component {
     </View>
   )
 
+  // Aviso de unique key prop, não consegui resolver 
   render() {
     return (
       <View style={styles.container}>
@@ -58,6 +60,7 @@ export default class Main extends Component {
   }
 }
 
+// Styles
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -104,9 +107,4 @@ const styles = StyleSheet.create({
   },
 });
  
-// {this.state.message.map(image => (
-//   <Image 
-//     style={styles.stretch} 
-//     source={{uri: image }}
-//   />
-// ))}
+// End of Styles 
