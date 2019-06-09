@@ -5,7 +5,7 @@ import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity } from "react
 
 export default class Main extends Component {
   static navigationOptions = {
-    title: 'Home',
+    title: 'Fauna Africana',
   };
 
   state = {
@@ -17,7 +17,7 @@ export default class Main extends Component {
   }
 
   loadImages = async () => {
-    const response = await api.get('/image/random/5');
+    const response = await api.get('/african/images/random/6');
 
     const { message } = response.data;
 
@@ -34,7 +34,12 @@ export default class Main extends Component {
           source={{uri: item }}
         />
 
-        <TouchableOpacity style={styles.button} onPress={() => {}}>
+        <TouchableOpacity 
+          style={styles.button} 
+          onPress={() => {
+            this.props.navigation.navigate('Image', { image: item });
+          }}
+        >
           <Text style={styles.buttonText}>Saiba Mais</Text>
         </TouchableOpacity>
     </View>

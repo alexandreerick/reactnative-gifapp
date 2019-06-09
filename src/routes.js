@@ -1,10 +1,15 @@
 import { createStackNavigator } from "react-navigation";
 
 import Main from "./pages/main";
+import Image from "./pages/image-info";
 
-export default createStackNavigator({
-  Main
-}, {
+
+export default createStackNavigator(
+{
+  Main,
+  Image,
+}, 
+{
   navigationOptions: {
     headerStyle: {
       backgroundColor: "#6c1296",
@@ -12,7 +17,7 @@ export default createStackNavigator({
     headerTintColor: "#FFF",
     headerTitleStyle: {
       fontWeight: 'bold',
-      fontSize: 25,
+      fontSize: 20,
     },
   },
 });
